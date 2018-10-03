@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}View Trainee!{% endblock %}
+
+{% block body %}
+    <style>
+        .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+        .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+    </style>
+
+    <div class="example-wrapper">
+        <h1>Trainee Details! ✅</h1>
+
+        <ul>
+            <li>Name: {{traineeArr.name}}</li>
+            <li>Email: {{traineeArr.email}}</li>
+            <li>Gender: {{traineeArr.gender}}</li>
+            <li>Date of Birth: {{traineeArr.dob}}</li>
+        </ul>
+    </div>
+{% endblock %}
