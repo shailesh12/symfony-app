@@ -11,9 +11,7 @@ use FOS\RestBundle\View\View;
 use Symfony\Component\HttpFoundation\Response;
 use FOS\RestBundle\Controller\Annotations\Version;
 
-/**
- * @Version({"v1", "v2"})
- */
+
 class TraineeApiController extends FOSRestController {
 
     /**
