@@ -4,26 +4,8 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/var/www/html/symfony-app/templates/center/index.html.twig</file>
-            <file>file:/var/www/html/symfony-app/src/Form/CenterType.php</file>
-            <file>file:/var/www/html/symfony-app/src/EventListener/ExceptionListener.php</file>
-            <file>file:/var/www/html/symfony-app/templates/trainee/index.html.twig</file>
-            <file>file:/var/www/html/symfony-app/src/DataFixtures/UsersFixtures.php</file>
-            <file>file:/var/www/html/symfony-app/templates/security/login.html.twig</file>
-            <file>file:/var/www/html/symfony-app/src/Exception/TraineeException.php</file>
-            <file>file:/var/www/html/symfony-app/bin/console</file>
-            <file>file:/var/www/html/symfony-app/config/packages/security.yaml</file>
-            <file>file:/var/www/html/symfony-app/assets/js/app.js</file>
-            <file>file:/var/www/html/symfony-app/src/Controller/TraineeController.php</file>
             <file>file:/var/www/html/symfony-app/config/packages/fos_rest.yaml</file>
-            <file>file:/var/www/html/symfony-app/templates/bundles/TwigBundle/Exception/error.html.twig</file>
-            <file>file:/var/www/html/symfony-app/src/Entity/Users.php</file>
-            <file>file:/var/www/html/symfony-app/templates/bundles/TwigBundle/Exception/error404.html.twig</file>
-            <file>file:/var/www/html/symfony-app/assets/css/app.css</file>
-            <file>file:/var/www/html/symfony-app/src/Controller/SecurityController.php</file>
-            <file>file:/var/www/html/symfony-app/config/bundles.php</file>
-            <file>file:/var/www/html/symfony-app/config/services.yaml</file>
-            <file>file:/var/www/html/symfony-app/config/packages/dev/monolog.yaml</file>
+            <file>file:/var/www/html/symfony-app/src/Controller/TraineeApiController.php</file>
             <file>file:/var/www/html/symfony-app/config/routes/annotations.yaml</file>
         </group>
     </open-files>

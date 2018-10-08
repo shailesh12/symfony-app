@@ -12,10 +12,9 @@ use Symfony\Bridge\Doctrine\RegistryInterface;
  * @method Trainee[]    findAll()
  * @method Trainee[]    findBy(array $criteria, array $orderBy = null, $limit = null, $offset = null)
  */
-class TraineeRepository extends ServiceEntityRepository
-{
-    public function __construct(RegistryInterface $registry)
-    {
+class TraineeRepository extends ServiceEntityRepository {
+
+    public function __construct(RegistryInterface $registry) {
         parent::__construct($registry, Trainee::class);
     }
 
@@ -23,28 +22,27 @@ class TraineeRepository extends ServiceEntityRepository
 //     * @return Trainee[] Returns an array of Trainee objects
 //     */
     /*
-    public function findByExampleField($value)
-    {
-        return $this->createQueryBuilder('t')
-            ->andWhere('t.exampleField = :val')
-            ->setParameter('val', $value)
-            ->orderBy('t.id', 'ASC')
-            ->setMaxResults(10)
-            ->getQuery()
-            ->getResult()
-        ;
-    }
-    */
+      public function findByExampleField($value)
+      {
+      return $this->createQueryBuilder('t')
+      ->andWhere('t.exampleField = :val')
+      ->setParameter('val', $value)
+      ->orderBy('t.id', 'ASC')
+      ->setMaxResults(10)
+      ->getQuery()
+      ->getResult()
+      ;
+      }
+     */
 
-    /*
-    public function findOneBySomeField($value): ?Trainee
-    {
+
+    public function findById($id): ?Trainee {
         return $this->createQueryBuilder('t')
-            ->andWhere('t.exampleField = :val')
-            ->setParameter('val', $value)
-            ->getQuery()
-            ->getOneOrNullResult()
+                        ->andWhere('t.id = :val')
+                        ->setParameter('val', $id)
+                        ->getQuery()
+                        ->getOneOrNullResult()
         ;
     }
-    */
+
 }

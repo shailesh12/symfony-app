@@ -4,7 +4,7 @@ fos_rest:
     body_listener: true
     format_listener:
         rules:
-            - { path: ^/, priorities: [ json, html ], fallback_format: ~, prefer_extension: false }
+            - { path: '^/api/', priorities: [ json ], fallback_format: ~, prefer_extension: false }
         #media_type:
         #    version_regex: '/(v|version)=(?P<version>[0-9\.]+)/'
     body_converter:
@@ -35,3 +35,10 @@ fos_rest:
         json: true
     routing_loader:
         default_format: json
+    versioning:
+        enabled: true
+        default_version: v1
+        resolvers:
+            query: 
+                enabled: true
+                parameter_name: version
