@@ -37,4 +37,11 @@ fos_rest:
         json: true
     routing_loader:
         default_format: json
+    versioning:
+        enabled: true
+        default_version: v1
+        resolvers:
+            query: 
+                enabled: true
+                parameter_name: version
    

@@ -8,6 +8,13 @@
 #    controller: App\Controller\LuckyController::number
 
 
-api:
-    type: rest
+#api:
+#    type: rest
+#    resource: App\Controller\TraineeApiController
+
+    
+    
+traineeapi:
+    type:     rest
     resource: App\Controller\TraineeApiController
+    #prefix: {version} 
