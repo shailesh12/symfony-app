@@ -8,6 +8,7 @@ use Symfony\Component\HttpFoundation\Response;
 use App\Entity\Trainee;
 use App\Exception\TraineeException;
 use Psr\Log\LoggerInterface;
+use App\Service\MessageGenerator;
 
 class TraineeController extends AbstractController {
 
@@ -16,7 +17,7 @@ class TraineeController extends AbstractController {
      * "ln":"/over-ons"
      * }, name="trainee")
      */
-    public function index(LoggerInterface $logger) {
+    public function index(LoggerInterface $logger, MessageGenerator $messageGenerator) {
         $traineesList = $this->getDoctrine()->getRepository(Trainee::class)->findAll();
 //        asd($traineeList[0]);
 
@@ -27,6 +28,8 @@ class TraineeController extends AbstractController {
             // include extra "context" info in your logs
             'cause' => 'in_hurry',
         ));
+        $message = $messageGenerator->getHappyMessage();
+        $this->addFlash('success', $message);
         return $this->render('trainee/index.html.twig', [
                     'data' => $traineesList,
         ]);
@@ -42,7 +45,7 @@ class TraineeController extends AbstractController {
 
         $trainee = new Trainee();
         $trainee->setName('Trainee Four');
-        $trainee->setEmail('trainee4@yopmail.com');
+        $trainee->setEmail('trainee45@yopmail.com');
         $trainee->setGender('Male');
         $trainee->setDob(\DateTime::createFromFormat('Y-m-d', "1990-10-12"));
         $trainee->setCreatedAt(\DateTime::createFromFormat('Y-m-d', "2018-09-27"));

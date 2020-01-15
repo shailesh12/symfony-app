@@ -7,6 +7,7 @@
         "ext-iconv": "*",
         "friendsofsymfony/rest-bundle": "^2.4",
         "sensio/framework-extra-bundle": "^5.2",
+        "symfony/apache-pack": "^1.0",
         "symfony/asset": "*",
         "symfony/console": "*",
         "symfony/expression-language": "*",
@@ -23,18 +24,22 @@
         "symfony/twig-bundle": "*",
         "symfony/validator": "*",
         "symfony/web-link": "*",
-        "symfony/web-server-bundle": "*",
         "symfony/webpack-encore-pack": "^1.0",
         "symfony/yaml": "*"
     },
     "require-dev": {
+        "behat/behat": "^3.5@dev",
         "doctrine/doctrine-fixtures-bundle": "^3.0",
         "sensiolabs/security-checker": "^4.1",
+        "symfony/browser-kit": "*",
+        "symfony/css-selector": "*",
         "symfony/debug-pack": "*",
         "symfony/dotenv": "*",
         "symfony/maker-bundle": "^1.0",
+        "symfony/phpunit-bridge": "*",
         "symfony/profiler-pack": "*",
-        "symfony/test-pack": "*"
+        "symfony/test-pack": "dev-master",
+        "symfony/web-server-bundle": "*"
     },
     "config": {
         "preferred-install": {
@@ -80,5 +85,6 @@
             "allow-contrib": false,
             "require": "4.1.*"
         }
-    }
+    },
+    "minimum-stability": "dev"
 }
